@@ -1,0 +1,56 @@
+﻿Build started 21/1/2559 9:36:08.
+     1>Project "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\projectfvm\projectfvm.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\projectfvm.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I. /FIcuda_runtime.h /c "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\projectfvm\kernel.cu" 
+       AddCudaCompileDeps:
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\kati\AppData\Local\Temp\6d03cdbb512a4e499ab07fe3410dafbc.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\kernel.cu.obj "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\projectfvm\kernel.cu"
+         
+         C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\projectfvm>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\kernel.cu.obj "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\projectfvm\kernel.cu" 
+     1>C:/Users/kati/Documents/Visual Studio 2010/Projects/projectfvm/projectfvm/kernel.cu(160): warning : variable "index" was declared but never referenced
+         
+     1>C:/Users/kati/Documents/Visual Studio 2010/Projects/projectfvm/projectfvm/kernel.cu(198): warning : variable "index" was declared but never referenced
+         
+     1>C:/Users/kati/Documents/Visual Studio 2010/Projects/projectfvm/projectfvm/kernel.cu(36): warning : variable "BLOCKS" was declared but never referenced
+         
+     1>C:/Users/kati/Documents/Visual Studio 2010/Projects/projectfvm/projectfvm/kernel.cu(160): warning : variable "index" was declared but never referenced
+         
+     1>C:/Users/kati/Documents/Visual Studio 2010/Projects/projectfvm/projectfvm/kernel.cu(198): warning : variable "index" was declared but never referenced
+         
+     1>C:/Users/kati/Documents/Visual Studio 2010/Projects/projectfvm/projectfvm/kernel.cu(36): warning : variable "BLOCKS" was declared but never referenced
+         
+         ptxas C:/Users/kati/AppData/Local/Temp/tmpxft_00000898_00000000-4_kernel.ptx, line 1904; : warning : Double is not supported. Demoting to float
+     1>C:/Users/kati/Documents/Visual Studio 2010/Projects/projectfvm/projectfvm/kernel.cu(243): warning C4305: '=' : truncation from 'double' to 'float'
+       CudaBuild:
+       Skipping target "CudaBuild" because all output files are up-to-date with respect to the input files.
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\projectfvm.exe" /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\projectfvm.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\projectfvm.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\projectfvm.lib" /MACHINE:X86 Release\kernel.cu.obj
+         Release\my_cuda_time.cu.obj
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         projectfvm.vcxproj -> C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\projectfvm.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\projectfvm.exe;#1" /manifest Release\projectfvm.exe.intermediate.manifest
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\Release\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart32_55.dll
+                 1 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Release\projectfvm.unsuccessfulbuild".
+         Touching "Release\projectfvm.lastbuildstate".
+     1>Done Building Project "C:\Users\kati\Documents\Visual Studio 2010\Projects\projectfvm\projectfvm\projectfvm.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.05
